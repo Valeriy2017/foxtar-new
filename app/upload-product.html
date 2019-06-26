@@ -29,7 +29,7 @@
                 </div><!--header__item-basket-->
               
               <div class="header__btn">
-                <button class="header__login">login</button><!--header__login-->
+                <a data-fancybox data-src="#modal" href="javascript:;" class="header__login">login</a><!--header__login-->
                 <button class="header__registr">Register</button><!--header__registration-->
               </div><!--header__btn-->
             </div><!--header__item-->
@@ -138,6 +138,25 @@
       </div><!--footer__copy-->
     </footer>
 
+
+
+    <div class="popup-login " id="modal">
+      <div class="popup__login-title">Login</div>
+      <form action="#" class="popup__login-form">
+        <label class="popup__login-name">
+          <input type="text" placeholder="Name">
+        </label>
+          
+        <label class="popup__login-password">
+          <input type="password" placeholder="Password">
+        </label>
+        <div class="popup__login-btn">
+          <button>Submit</button>
+          <a class="popup__login-creat" href="#">Creat An Account?</a>
+        </div>
+        <a class="popup__login-lost" href="#">Lost Password?</a>
+      </form>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/lids.min.js"></script>

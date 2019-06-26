@@ -24,7 +24,8 @@
 }
 
 .header__btn{
-  button{
+  a, button{
+    display: inline;
     font-size: 12px;
     color: #fff;
     border: none;
