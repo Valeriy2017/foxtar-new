@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Lato:700|Open+Sans:600|Raleway:700i|Roboto:400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/media.min.css">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Document</title>
@@ -24,9 +25,30 @@
             </div><!--header__phone-->
             <div class="header__item">
                 <div class="header__item-basket header__item--activ">
+                  <span class="header__icon-bell">8</span>
+                  <span class="icon-bell-o header__icon"></span>
+                </div><!--header__item-basket-->
+
+                <div class="header__item-basket header__item--activ">
+                  <span class="header__icon-envelope">5</span>
+                  <span class="icon-envelope-o header__icon"></span>
+                </div><!--header__item-basket-->
+
+                <div class="header__item-basket header__item--activ">
                   <span class="header__icon-circle">8</span>
                   <span class="icon-shopping-cart header__icon"></span>
                 </div><!--header__item-basket-->
+                <div class="header__acount">
+                  <a href="#">
+                    <div class="header__account-photo">
+                      <img src="img/item-1a.jpg" alt="usser-name">
+                    </div>
+                    <div class="header__account-usser-name">
+                      <div class="account__usser-name">Mike Hussy</div>
+                      <div class="account__usser-praces"><span>$171.00</span></<div>
+                    </div><!--header__account-usser-name-->
+                  </a>
+                </div><!--header__acount-->
               
               <div class="header__btn">
                 <a data-fancybox data-src="#modal" href="javascript:;" class="header__login">login</a><!--header__login-->
@@ -56,6 +78,19 @@
       </div><!--header__nawigation-->
     </header>
 
+    <section class="search__all-items">
+        <div class="container">
+          <div class="search__inner__all-items">
+            <div class="search__title__all-items">
+              Premium WordPress Themes, Web Templates and Many More ... 
+            </div>
+            <input type="text" placeholder="Search Your Keywords . . . ">
+            <button></button>
+            <span class= "search__ico__all-items"></span>
+          </div>
+        </div>
+      </section>
+
     <main class="main all-items">
       <div class="breadcrums">
         <div class="container">
@@ -75,6 +110,97 @@
         </ul>
       </div><!--container-->
       </div><!--breadcrums-->
+
+      <div class="container">
+        <div class="upload__product">
+        <div class="upload__product-inner">
+          <div class="upload__product-title">
+            Upload Your item
+          </div><!--upload__product-title-->
+          <form class="upload__product-form" >
+            <div class="upload__product-item">
+              <label>
+                Select Categories<sap>*</sap>
+              </label>
+              <select required name="#" id="sele" placeholder="Enter your product name here ...">
+                <option value="">Select</option>
+                <option value="">----</option>
+                <option value="">----</option>
+                <option value="">Select</option>
+              </select>
+            </div><!--upload__product-item-->
+            <div class="upload__product-item">
+              <label>
+                Product Name<sap>*</sap>
+              </label>
+              <input required type="text" placeholder="Enter your product name here ...">
+            </div><!--upload__product-item-->
+            <div class="upload__product-item">
+              <label>
+                Product Description<sap>*</sap>
+              </label>
+              <textarea required  placeholder="<h1> Type your text  here </h1/>"></textarea>
+            </div><!--upload__product-item-->
+            <div class="upload__product-item">
+              <label>
+                Upload Main File<sap>*</sap>
+              </label>
+              <input required type="file" placeholder="">
+            </div><!--upload__product-item-->
+            <div class="upload__product-item">
+              <label>
+                Upload Screenshots<sap>*</sap>
+              </label>
+              <input required type="file" placeholder="">
+            </div><!--upload__product-item-->
+            <div class="upload__product-item">
+              <label>
+                File Included<sap>*</sap>
+              </label>
+              <select required name="" id="" placeholder="Select File Type">
+                <option value="">Select File Type</option>
+                <option value="">\-_-/</option>
+                <option value="">\-_-/</option>
+                <option value="">\-_-/</option>
+              </select>
+            </div><!--upload__product-item-->
+            <div class="upload__product-item">
+              <label>
+                File Dimensions<sap>*</sap>
+              </label>
+              <input required type="text" placeholder="Enter the item  dimentionss here ...">
+            </div><!--upload__product-item-->
+            <div class="upload__product-item">
+              <label>
+                Item Tags<sap>*</sap>
+              </label>
+              <input required type="text" placeholder="Enter Tag Here">
+            </div><!--upload__product-item-->
+
+
+
+          </form>
+          <div class="upload__product-title">
+            Set Your Price (US$)
+          </div><!--upload__product-title-->
+          <form class="upload__product-form">
+            <div class="upload__product-item">
+              <label for="">
+                Regular License<sap>*</sap>
+              </label>
+              <input required type="number" placeholder="$00.00">
+            </div><!--upload__product-item-->
+            <div class="upload__product-item">
+              <label for="">
+                Extended License<sap>*</sap>
+              </label>
+              <input required type="number" placeholder="$00.00">
+            </div><!--upload__product-item-->
+            <button>Submit</button>
+          </form><!--upload__product-form-->
+        </div><!--upload__product-inner-->
+      </div><!--upload__product-->
+      </div><!--container-->
   
       </main>
 
@@ -178,9 +304,9 @@
         </div>
         <a class="popup__login-lost" href="#">Lost Password?</a>
       </form>
-    </div><!--popup-login-->
+    </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/lids.min.js"></script>
     <script src="js/main.js"></script>
 </body>
